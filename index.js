@@ -31,7 +31,10 @@ app.post("/", (req, res) =>{
     } else if (_.includes(msg, "大阪")){
         replyMsg = "お好み焼き"
         url = "http://www.chibo.com/"
-    }
+    } else if (_.includes(msg, "hogehoge")){
+    replyMsg = "hogehoge"
+    url = "http://www.chibo.com/"
+}
 
 
     // console.log(msg)
