@@ -4,6 +4,8 @@ const bodyParser = require("body-parser")
 const request = require("request")
 const _ = require("lodash")
 const app = express()
+const PORT = process.env.PORT || 3000
+
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => res.send('ドーナツ'))
@@ -56,4 +58,4 @@ app.post("/", (req, res) =>{
     res.sendStatus(200)
 })
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(PORT, () => console.log('Example app listening on port 3000!'))
