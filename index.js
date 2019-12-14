@@ -5,11 +5,10 @@ const request = require("request")
 const _ = require("lodash")
 const app = express()
 app.use(bodyParser.json())
+
 app.get('/', (req, res) => res.send('ドーナツ'))
 // app.get('/hinayo', (req, res) => res.send('ひなよ'))
 const accessToken = "fkfYtqgF9joQ/UoZ/W2viyvbD5dhpoPP9JjPCsaUFgpzxQ++dTiTwfTCMa9+YMVgq5p8YTfHv55nqDDqNj4/WoXCbe19mmmiulKscqYDNDnceirhMttk0SmAoQ210LBJh6No4s0hRM6i2SIhz/tnDwdB04t89/1O/w1cDnyilFU="
-
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
 
 // app.get('/', (req, res) => res.send('ミスド'))
 // app.get('/ishida', (req, res) => res.send('ひなよ')
@@ -56,3 +55,5 @@ app.post("/", (req, res) =>{
 
     res.sendStatus(200)
 })
+
+app.listen(3000, () => console.log('Example app listening on port 3000!'))
