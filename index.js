@@ -34,6 +34,9 @@ app.post("/", (req, res) =>{
     } else if (_.includes(msg, "hogehoge")){
     replyMsg = "hogehoge"
     url = "http://www.chibo.com/"
+}else if (_.includes(msg, "hogehoge2")){
+    replyMsg = "hogehoge2"
+    url = "http://www.chibo.com/"
 }
 
 
